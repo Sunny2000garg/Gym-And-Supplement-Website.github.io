@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<title>GymAndSupplement</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="gs.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;background-color:rgb(230, 230, 230);}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+
+
+<div class="gs-top">
+  <div class="gs-bar gs-padding gs-card" style="font-family:JOKER;letter-spacing:4px;background-color:black;color:white;">
+    <a href="index.html" class="gs-bar-item" ><img src="logo.jpg" height="70" width="300" ></a>
+
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="gs-right gs-hide-small">
+      <a href="About.html" class="gs-bar-item gs-button">About</a>
+	  <a href="Blog.html" class="gs-bar-item gs-button">Blog</a>
+	  <a href="Supplement.html" class="gs-bar-item gs-button">Supplement</a>
+	  <a href="Diet.html" class="gs-bar-item gs-button">Diet</a>
+	  <a href="Exercise.html" class="gs-bar-item gs-button">Exercise</a>
+      <a href="Shop.html" class="gs-bar-item gs-button">Shop</a>
+      <a href="contact.php" class="gs-bar-item gs-button">Contact us</a>
+    </div>
+  </div>
+</div>
+<!-- Header -->
+<header class="gs-display-container gs-content gs-wide" style="max-width:1600px;min-width:500px" id="home">
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="img1.jpg" width="1600" height="500">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="img5.jpg" width="1600" height="500">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="img6.jpg" width="1600" height="500">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="img4.jpg" width="1600" height="500">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+
+<!-------------------------------------------------------------------------------------------->
+  
+  
+<!--</header>-->
+
+<!-- Page content -->
+<div class="gs-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="gs-row gs-padding-64" id="about">
+    <h1 class="gs-center">About</h1><br>
+    <div class="gs-col m6 gs-padding-large gs-hide-small">
+      <hr>
+      <hr>
+     <img src="about1.gif" class="gs-circle gs-image gs-center" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" alt="Table Setting" width="600" height="750">
+    
+	
+	
+	
+	</div>
+
+    <div class="gs-col m6 gs-padding-large">
+      
+      <h3 class="gs-center">Our Story</h3>
+      <p class="gs-large">Gym and Supplement was founded in 2021 as a family owned and operated business. The Gym and Supplement founders didn’t want it to be just another gym equipment retailer - they wanted to be the best in the industry and set their minds to doing so! </p>
+      <h3 class="gs-center">What we do</h3>
+      <p class="gs-large">We want to help you live a fit and healthy lifestyle! We do this by helping you find the most suitable Supplement for your gym, studio or commercial gym, keeping your budget, lifestyle and fitness goals in mind. We stock a wide range of gym Supllement, with strength equipment and so much more. Our awesome team is always keen to help, so please contact us to discuss your needs.</p>
+    </div>
+  </div>
+
+  <hr>
+  
+<!-- End page content -->
+</div>
+<!-- Footer -->
+<footer class="gs-center gs-light-grey gs-padding-32">
+<h1 class="gs-xxlarge" style="color:gray;">Gym And Supplement</h1>  
+</footer>
+
+</body>
+</html>

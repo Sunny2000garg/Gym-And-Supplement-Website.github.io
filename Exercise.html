@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+<title>GymAndSupplement</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="gs.css">
+<style>
+  body {
+    font-family: "Times New Roman", Georgia, Serif;
+    background-color: rgb(230, 230, 230);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+  }
+</style>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+
+
+  <div class="gs-top">
+    <div class="gs-bar gs-padding gs-card"
+      style="font-family:JOKER;letter-spacing:4px;background-color:black;color:white;">
+      <a href="index.html" class="gs-bar-item"><img src="logo.jpg" height="70" width="300"></a>
+
+      <!-- Right-sided navbar links. Hide them on small screens -->
+      <div class="gs-right gs-hide-small">
+        <a href="About.html" class="gs-bar-item gs-button">About</a>
+        <a href="Blog.html" class="gs-bar-item gs-button">Blog</a>
+        <a href="Supplement.html" class="gs-bar-item gs-button">Supplement</a>
+        <a href="Diet.html" class="gs-bar-item gs-button">Diet</a>
+        <a href="Exercise.html" class="gs-bar-item gs-button">Exercise</a>
+        <a href="Shop.html" class="gs-bar-item gs-button">Shop</a>
+        <a href="contact.php" class="gs-bar-item gs-button">Contact us</a>
+      </div>
+    </div>
+  </div>
+  <!-- Header -->
+  <header class="gs-display-container gs-content gs-wide" style="max-width:1600px;min-width:500px" id="home">
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="img1.jpg" width="1600" height="500">
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="img5.jpg" width="1600" height="500">
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="img6.jpg" width="1600" height="500">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="img4.jpg" width="1600" height="500">
+        <div class="text">Caption Three</div>
+      </div>
+
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 2 seconds
+      }
+    </script>
+
+  </header>
+  <!-------------------------------------------------------------------------------------------->
+
+
+  <!--</header>-->
+
+  <!-- Page content -->
+  <div class="gs-content gs-center" style="max-width:1100px">
+
+    <!-- chest Exercise Section -->
+
+    <h1 class="gs-xxlarge"><strong><u>Best Chest Exercises</u></strong></h1>
+    <p class="gs-xlarge">Exercises that define and sculpt your chest help you look your best at the beach or the gym.
+      They can also help you do a variety of daily tasks, like lifting or pushing objects. On top of all that, while you
+      improve your look and strength, you lift your mood, too.</p>
+    <p class="gs-xlarge">Working out the chest means working out the pectoral muscles, better known as the “pecs.” While
+      the pecs are the largest muscles in the chest, there are actually several smaller muscles that support the
+      pectoral muscles, including the latissimus dorsi muscles (or “lats”) on the sides of the chest and the trapezius
+      muscle around the shoulders.</p>
+    <h2 class="gs-xxlarge">Getting Started</h2>
+    <p class="gs-xlarge">To make sure you work all the chest muscles, include a mix of motions in your chest workout
+      routine:</p>
+      <p class="gs-xlarge">Press using the flat or incline bench, dumbbells, or bar, or seated machine chest press.</p>
+      <p class="gs-xlarge">Lift using the parallel bars, floor, or bench.</p>
+      <p class="gs-xlarge">Pull using the cable fly bench, dumbbells, or cable crossovers.</p>
+    <p class="gs-xlarge">If you’re a beginner, meet with a trainer to make sure you are following a good program with
+      proper form during the exercises. Consider starting with a lower weight to reduce your risk of injury. You should
+      be able to pick up the weight without too much strain. Remember, you can always go up in weight if the exercise
+      seems too easy.</p>
+    <p class="gs-xlarge">The number of reps and sets you do depends on your goal:</p>
+    <p class="gs-xlarge">To increase size, try 1 to 3 sets of 8-12 reps for new or intermediate lifters or 3-6 sets of
+      1-12 reps for seasoned lifters, of a weight that is at the higher end of your 1 rep max. Rest 1-2 minutes with
+      more reps and up to 3 minutes for higher weight, lower rep sets.</p>
+    <p class="gs-xlarge">To increase strength, try 1 to 3 sets of 8-12 reps for new or intermediate lifters or 2-6 sets
+      of 1-8 reps for seasoned lifters, of a weight that is around 60-80 percent of your max, depending on your
+      experience. Rest 1-2 minutes with more reps and up to 3 minutes for higher weight, lower rep sets.</p>
+
+
+    <table style="background-color:black;color: whitesmoke; ">
+      <tr >
+    <th style=" width:20%">
+        </th>
+        <th style="width:20%">Exercise Name:</th>
+        <th style="width:60%">Direction</th>
+      </tr>
+      <tr style="background-color: whitesmoke;">
+        <td colspan="3"> </td>
+      </tr>
+      <tr>
+        <td><img src="chest1.gif" class="gs-circle gs-image gs-center" alt="Table Setting" width="600" height="750">
+        </td>
+        <td class="gs-xxlarge"><strong>Barbell bench press</strong>
+        </td>
+
+        <td>
+          <strong> Equipment needed: barbell</strong>
+          <ol>
+            <li>Position yourself on the bench with your feet firmly on the ground and your back flat (the bar should be
+              directly over your eyes, and your head, shoulders, and buttocks should be on the bench).</li>
+            <li>Grasp the barbell with palms forward and thumbs wrapped around the bar. Move the bar into starting
+              position, with help from a spotter if needed.</li>
+            <li>Position the bar over your chin or upper chest, keeping your elbows and wrists straight.</li>
+            <li>Inhale and lower the bar slowly until it touches your chest below your armpits. As you lower, flare your
+              elbows out slightly.</li>
+            <li>Next, exhale and press the bar up, keeping your wrists straight and your back flat.</li>
+          </ol>
+        </td>
+      </tr>
+      <tr style="background-color: whitesmoke;">
+        <td colspan="3"> .</td>
+      </tr>
+
+      <tr>
+        <td><img src="chest2.gif" class="gs-circle gs-image gs-center" alt="Table Setting" width="600" height="750">
+        </td>
+        <td class="gs-xxlarge"><strong>Pec deck</strong></td>
+        <td> Resist the urge to add extra weight. Doing so could increase your risk of injury. This exercise isn’t for
+          you if you have had a shoulder injury. Here are the steps:
+          <ol>
+            <li>Keep your feet flat on the floor, at least shoulder-width apart.</li>
+            <li>With your back firmly against the seat, lift your arms until they reach shoulder level (the angle of
+              your elbows should be between 75 and 90 degrees). Place your elbows on the center of the pad on the wings
+              of the machine.</li>
+            <li>With smooth and slow movement, push the wings together, stopping just before they touch.</li>
+            <li>Inhale and lower the bar slowly until it touches your chest below your armpits. As you lower, flare your
+              elbows out slightly.</li>
+            <li>Reverse to the starting position slowly.</li>
+          </ol>
+        </td>
+      </tr>
+      <tr style="background-color: whitesmoke;">
+        <td colspan="3"> .</td>
+      </tr>
+
+      <tr>
+        <td><img src="chest3.gif" class="gs-circle gs-image gs-center" alt="Table Setting" width="600" height="750">
+        </td>
+        <td class="gs-xxlarge"><strong>Bent forward cable crossover</strong></td>
+        <td><strong>Equipment needed: high pulley machine</strong>
+          <ol>
+            <li>Begin this exercise either with your feet planted hip-width apart, or with one in front of the other as
+              if you are walking.</li>
+            <li>Grasp the pulley handles with your arms straight out and facing inward, making sure that your hands are
+              below your shoulders and your elbows are bent a bit.</li>
+            <li>Make your movements slow and controlled — no jerking — as you bring your hands together and extend your
+              arms. For a wider arc and more resistance, move your arms down first and then in toward each other to
+              cross one hand over the other.</li>
+            <li>Bring your arms slowly back to the starting position with control. Don’t let your arms go back past the
+              shoulders.</li>
+          </ol>
+        </td>
+      </tr>
+      <tr style="background-color: whitesmoke;">
+        <td colspan="3"> .</td>
+      </tr>
+
+      <tr>
+        <td><img src="chest4.gif" class="gs-circle gs-image gs-center" alt="Table Setting" width="600" height="750">
+        </td>
+        <td class="gs-xxlarge"><strong>Chest press</strong></td>
+        <td>
+          <ol>
+            <li>Adjust the chest press bench so that you sit with knees bent slightly and your feet on the floor.</li>
+            <li>Grasp the handles, and exhale as you push them away until your arms are straight out. Keep your elbows
+              slightly bent.</li>
+            <li>As you inhale, pull the bars toward you slowly and with control, without letting the weights touch</li>
+          </ol>
+        </td>
+      </tr>
+      <tr style="background-color: whitesmoke;">
+        <td colspan="3"> .</td>
+      </tr>
+      <tr>
+        <td><img src="chest5.gif" class="gs-circle gs-image gs-center" alt="Table Setting" width="600" height="750">
+        </td>
+        <td class="gs-xxlarge"><strong>Inclined dumbbell flies</strong></td>
+        <td><strong>Equipment needed: set of dumbbells</strong>
+          <ol>
+            <li>Take a dumbbell in each hand and lie on a bench, feet firmly on the floor.</li>
+            <li>Press your shoulders, back, head, and buttocks to the bench. Position the dumbbells near your chest and
+              armpits with your palms facing inward. Keep your wrists straight.</li>
+            <li>Exhale, pull in your abs, and slowly press the dumbbells up directly above your chest. Your arms should
+              be shoulder-width apart. Keep your elbows straight but not locked.</li>
+            <li>Inhale and lower the dumbbells slowly in a wide arc until they are level with your chest. Keep the
+              dumbbells parallel.</li>
+            <li>“Fly” the dumbbells toward the ceiling in the same gentle arc.</li>
+          </ol>
+        </td>
+      </tr>
+      <tr style="background-color: whitesmoke;">
+        <td colspan="3"> .</td>
+      </tr>
+      <tr>
+        <td><img src="chest6.gif" class="gs-circle gs-image gs-center" alt="Table Setting" width="600" height="750">
+        </td>
+        <td class="gs-xxlarge"><strong>Dips</strong></td>
+        <td>
+          <ol>
+            <li>Grasp the parallel dip bars firmly and lift your body.</li>
+            <li>Keep your elbows straight, your head in line with your trunk, and your wrists in line with your
+              forearms.</li>
+            <li>Bring one leg across the other to stabilize the lower part of your body, and pull in your abs.</li>
+            <li>Exhale, and bend your elbows to lower your body. Keep your elbows near your sides. Your legs should be
+              directly under your body to avoid tilting or swinging.</li>
+            <li>Pause, and then straighten your elbows, pushing into the bars with your hands, and return to starting
+              position. Keep your body vertical and your wrists straight.</li>
+          </ol>
+        </td>
+      </tr>
+      <tr style="background-color: whitesmoke;">
+        <td colspan="3"> .</td>
+      </tr>
+      <tr>
+        <td><img src="chest7.gif" class="gs-circle gs-image gs-center" alt="Table Setting" width="600" height="750">
+        </td>
+        <td class="gs-xxlarge"><strong>Pushups</strong></td>
+        <td>Get the most from your pushups by paying close attention to your form.
+          <ol>
+            <li>Tighten your abdominals, keep your back flat, your neck in alignment with your spine, and keep your
+              elbows close to your sides.</li>
+            <li>With your hands directly under your shoulders, lower yourself slowly and with control.</li>
+            <li>Lastly, press up.</li>
+          </ol>
+        </td>
+      </tr>
+    </table>
+  </br>
+  <br>
+    <!---Back section----------https://www.healthline.com/health/fitness/back-strengthening-muscles-posture-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <h1 class="gs-xxlarge"><u><strong>Best Back Exercises</strong></u></h1>
+    <p class="gs-xlarge">Strengthening your back muscles can help prevent these types of injuries and ensure that your
+      entire body works smoothly, both during daily movements and during exercise.</p>
+    <p class="gs-xlarge">When we talk about your back, which muscles are we targeting? Primary muscles in the back
+      include the:</p>
+      <p class="xlarge">lats, which are in the area below your armpits down the sides of your back</p>
+      <p class="xlarge">rhomboids, which are in the mid-upper back</p>
+      <p class="xlarge">traps, which run from your neck to your mid back</p>
+      <p class="xlarge">erector spinae, a group of muscles that run along your spine</p>
+    <p class="gs-xlarge">All of the exercises below target a combination of these muscles.</p>
+    <h2 class="gs-xxlarge">The Warmup</h2>
+    <p class="gs-xlarge">Start with 5 to 10 minutes of moderate cardio to get your blood pumping and start to awaken
+      your muscles. Then do a five-minute stretching sequence to prep your back for targeted exercises. This routine is
+      a great starting point. Also, if at any point these moves cause you pain, stop what you’re doing and rest.</p>
+
+    <!-----------------------Table------------------------------------------------>
+    <table style="background-color:black;color: whitesmoke; ">
+      <tr ">
+        <th style=" width:20%">
+        </th>
+        <th style="width:20%">Exercise Name:</th>
+        <th style="width:60%">Directions:</th>
+      </tr>
+      <tr style="background-color: whitesmoke;">
+        <td colspan="3"> </td>
+      </tr>
+      <tr>
+        <td><video class="gs-circle gs-image gs-center" width="600" height="750" autoplay loop>
+            <source src="back1.mp4" alt="Table Setting" type="video/mp4">
+          </video></td>
+        <td class="gs-xxlarge"><strong>Resistance band pull apart</strong></td>
+        <td>
+          <ol>
+            <li>Stand with your arms extended. Hold a resistance band taut in front of you with both hands so the band is parallel to the ground.</li>
+            <li>Keeping your arms straight, pull the band to your chest by moving your arms out to your sides. Initiate this movement from your mid back, squeezing your shoulder blades together and keeping your spine straight, then slowly return to start.</li>
+          </ol>
+        </td>
+      </tr>
+      <tr style="background-color: whitesmoke;">
+        <td colspan="3"> .</td>
+      </tr>
+      <tr>
+        <td><video class="gs-circle gs-image gs-center" width="600" height="750" autoplay loop>
+            <source src="back2.mp4" alt="Table Setting" type="video/mp4">
+          </video></td>
+        <td class="gs-xxlarge"><strong>Quadruped dumbbell row</strong></td>
+        <td>
+          <ol>
+            <li>Get on all fours with a dumbbell positioned in each hand. Ensure your back is straight, hands are directly below shoulders, and knees are directly below hips.</li>
+            <li>Row up with your right arm, pulling your elbow up and bringing the dumbbell to your armpit. Keep your elbow tucked throughout the movement. You’ll notice here that if you row too far, you’ll lose your balance.</li>
+            <li>Extend your arm, returning the dumbbell to the ground, and repeat on the left side.</li>
+            <li>Complete 3 sets of 12 reps on each side.</li>
+          </ol>
+        </td>
+      </tr>
+      <tr style="background-color: whitesmoke;">
+        <td colspan="3"> .</td>
+      </tr>
+      <tr>
+        <td><video class="gs-circle gs-image gs-center" width="600" height="750" autoplay loop>
+            <source src="back3.mp4" alt="Table Setting" type="video/mp4">
+          </video></td>
+        <td class="gs-xxlarge"><strong>Lat pulldown</strong></td>
+        <td>
+          <ol>
+            <li>If you’re using a machine, position the pad so it’s touching your thighs. Stand up and grab the bar wider than shoulder-width apart, sitting back down.</li>
+            <li>Begin to pull the bar down toward your chest, bending your elbows and directing them down to the ground. Engage your upper and mid back throughout this whole movement. Keep your torso straight, not allowing yourself to fall backward.</li>
+            <li>Complete 3 sets of 12 reps</li>
+          </ol>
+        </td>
+      </tr>
+      <tr style="background-color: whitesmoke;">
+        <td colspan="3"> .</td>
+      </tr>
+      <tr>
+        <td><video class="gs-circle gs-image gs-center" width="600" height="750" autoplay loop>
+            <source src="back4.mp4" alt="Table Setting" type="video/mp4">
+          </video></td>
+        <td class="gs-xxlarge"><strong>Wide dumbbell row</strong></td>
+        <td>
+          <ol>
+            <li>Hold a dumbbell in each hand and hinge at the waist, stopping when your upper body forms a 20-degree angle with the ground. Your palms should be facing your thighs, and your neck should remain neutral. Allow the dumbbells to hang down in front of you.</li>
+            <li>Begin to row with your elbows at a 90-degree angle, pulling them up toward the sky. Squeeze your shoulder blades together at the top.</li>
+            <li>Return to start and repeat, completing 3 sets of 12 reps.</li>
+          </ol>
+        </td>
+      </tr>
+      <tr style="background-color: whitesmoke;">
+        <td colspan="3"> .</td>
+      </tr>
+      <tr>
+        <td><video class="gs-circle gs-image gs-center" width="600" height="750" autoplay loop>
+            <source src="back5.mp4" alt="Table Setting" type="video/mp4">
+          </video></td>
+        <td class="gs-xxlarge"><strong>Barbell deadlift</strong></td>
+        <td>
+          <ol>
+            <li>Stand behind the barbell with your feet shoulder-width apart.</li>
+            <li>Keeping your chest lifted, begin to hinge at the hips and slowly bend your knees, reaching down to pick up the barbell. Keep your back straight and grasp the bar with both palms facing you in an overhand grip.</li>
+            <li>Push back up, keeping your feet flat on the floor, back into the starting position. Your back should remain straight throughout the movement. Your shoulders should be down and back.</li>
+            <li>Return to the starting position, pushing your hips back and bending your knees until you bring the barbell back to the ground.</li>
+            <li>Complete 3 sets of 12 reps.</li>
+          </ol>
+        </td>
+      </tr>
+      <tr style="background-color: whitesmoke;">
+        <td colspan="3"> .</td>
+      </tr>
+      <tr>
+        <td><video class="gs-circle gs-image gs-center" width="600" height="750" autoplay loop>
+            <source src="back6.mp4" alt="Table Setting" type="video/mp4">
+          </video></td>
+        <td class="gs-xxlarge"><strong>Hyperextension</strong></td>
+        <td>
+          <ol>
+            <li>Lie down on an exercise ball with your abdomen on the center of the ball. Press the balls of your feet into the ground to stay balanced.</li>
+            <li>Extend your arms forward. Bending at your waist, slowly raise your upper body toward the sky. Be sure to engage your core and glutes. Keep your feet on the floor.</li>
+            <li>Pause for a moment when at the top, then slowly lower down.</li>
+            <li>Complete 3 sets of 12 reps.</li>
+          </ol>
+        </td>
+      </tr>
+      <tr style="background-color: whitesmoke;">
+        <td colspan="3"> .</td>
+      </tr>
+      <tr>
+        <td><video class="gs-circle gs-image gs-center" width="600" height="750" autoplay loop>
+            <source src="back7.mp4" alt="Table Setting" type="video/mp4">
+          </video></td>
+        <td class="gs-xxlarge"><strong>‘Good morning’</strong></td>
+        <td>
+          <ol>
+            <li>If using weight, safely mount a barbell on your shoulders behind your head. Position your feet shoulder-width apart.</li>
+            <li>Hinging at your hips, soften your knees and drop your torso toward the ground, stopping when it’s parallel. Your back should remain straight throughout this movement.</li>
+            <li>Once you reach parallel, push through your feet and return to start. Complete 3 sets of 12 reps.</li>
+          </ol>
+        </td>
+      </tr>
+      <tr style="background-color: whitesmoke;">
+        <td colspan="3"> .</td>
+      </tr>
+      <tr>
+        <td><video class="gs-circle gs-image gs-center" width="600" height="750" autoplay loop>
+            <source src="back8.mp4" alt="Table Setting" type="video/mp4">
+          </video></td>
+        <td class="gs-xxlarge"><strong>Single-arm dumbbell row</strong></td>
+        <td>
+          <ol>
+            <li>Position yourself on a bench so your left knee and shin are resting on it, as well as your left hand — this will be your support. Your right leg should be straight with your foot on the ground. Pick up the dumbbell with your right hand. Maintain a straight torso.</li>
+            <li>Row the dumbbell up, pulling your elbow toward the sky while keeping it close to your body. Squeeze your upper back as you pull your elbow up.</li>
+            <li>Slowly lower back down to the start position. Complete 3 sets of 12 reps on each side.</li>
+          </ol>
+        </td>
+      </tr>
+      <tr style="background-color: whitesmoke;">
+        <td colspan="3"> .</td>
+      </tr>
+      <tr>
+        <td><video class="gs-circle gs-image gs-center" width="600" height="750" autoplay loop>
+            <source src="back9.mp4" alt="Table Setting" type="video/mp4">
+          </video></td>
+        <td class="gs-xxlarge"><strong>Renegade dumbbell row</strong></td>
+        <td>
+          <ol>
+            <li>Assume a high plank position with each of your hands on a dumbbell. Your body should form a straight line from your head to your toes. Your core should be engaged throughout the movement.</li>
+            <li>Row with your right arm, pulling your elbow toward the sky while keeping it close to your body, then returning the dumbbell to the ground. Ensure that your hips stay square to the ground.</li>
+            <li>Repeat with your left arm. Alternate, completing 20 total reps for 3 sets.</li>
+          </ol>
+        </td>
+      </tr>
+      <tr style="background-color: whitesmoke;">
+        <td colspan="3"> .</td>
+      </tr>
+      <tr>
+        <td><video class="gs-circle gs-image gs-center" width="600" height="750" autoplay loop>
+            <source src="back10.mp4" alt="Table Setting" type="video/mp4">
+          </video></td>
+        <td class="gs-xxlarge"><strong>Wood chop</strong></td>
+        <td>
+          <ol>
+            <li>Grab the dumbbell or medicine ball with both hands. Hold it above your head with your arms extended. Pivot on your right foot slightly so your hips are rotated.</li>
+            <li>As you begin to squat down, rotate your hips to the left and bring the dumbbell or ball down to the outside of your left knee in a sweeping movement.</li>
+            <li>On the ascent, twist your trunk back toward the right and, keeping your arms straight, bring the dumbbell or ball back up above the right side of your head in an explosive but controlled movement. This movement should mimic a chopping motion, hence the name.</li>
+            <li>Complete 12 reps on each side for 3 sets total.</li>
+          </ol>
+        </td>
+      </tr>
+    </table>
+   <!------------------------back section closed----------------------------------------------------------------------------------------------------------->
+
+<br>
+<!----------------Best Exercises for Bigger, Stronger Arms-------------------------------------------------------------------------------------------------------------------------------------------------------->
+<h1 class="xxlarge">Best Exercises for Bigger, Stronger Arms</h1>
+<p class="xlarge">Having bigger, stronger arms can give you a feeling of confidence. Muscular arms can also convey a sense of athleticism and strength. But there are some important practical benefits to having stronger arms, too.</p>
+<p class="xlarge">Anything that requires upper body effort — from picking up your kids to lifting heavy boxes — can be done more easily with stronger arms. In addition to boosting your daily functional fitness, having more muscle mass has the ability to:</p>
+<p class="xlarge">increase your metabolism — this means your body will burn more calories, even when you’re not exercising</p>
+<p class="xlarge">increase muscle endurance, strength, and tone</p>
+<p class="xlarge">lower your chance of injury</p>
+<p class="xlarge">The two main muscles in your upper arm are the biceps in the front and the triceps in the back. They’re opposite functioning muscle groups, so they require different types of exercises for strength training.</p>
+<br>
+
+<table style="background-color:black;color: whitesmoke; ">
+  <tr >
+<th style=" width:20%">
+    </th>
+    <th style="width:20%">Exercise Name:</th>
+    <th style="width:60%">Direction</th>
+  </tr>
+  <tr style="background-color: whitesmoke;">
+    <td colspan="3"> </td>
+  </tr>
+  <tr>
+    <td><img src="arm1.gif" class="gs-circle gs-image gs-center" alt="Table Setting" width="600" height="750">
+    </td>
+    <td class="gs-xxlarge"><strong>Concentration Curl</strong>
+    </td>
+
+    <td><strong> Equipment needed: dumbbell</strong>
+      <ol>
+    <li>Sit at the end of a flat bench with your legs open in a V shape.</li>
+    <li>Grip a dumbbell with one hand and lean forward slightly.</li>
+    <li>With your palm facing your center, rest your elbow against the inside of your thigh.</li>
+    <li>Rest your other hand or elbow on the other thigh for stability.</li>
+    <li>While keeping your upper body still, curl the weight slowly toward your shoulder.</li>
+    <li>As you lift, turn your wrist slightly so that you end the curl with your palm facing your shoulder.</li>
+    <li>Pause for a moment, allowing yourself to feel the effort in your bicep, and then slowly lower the weight. Don’t rest it on the floor, though, until your final repetition.</li>
+    <li>Repeat 12 to 15 times, then switch arms.</li>
+  </ol>
+    </td>
+  </tr>
+  <tr style="background-color: whitesmoke;">
+    <td colspan="3"> .</td>
+  </tr>
+  <tr>
+    <td><img src="arm2.gif" class="gs-circle gs-image gs-center" alt="Table Setting" width="600" height="750">
+    </td>
+    <td class="gs-xxlarge"><strong>Cable Curl</strong>
+    </td>
+
+    <td>
+      <ol>
+    <li>Stand a couple of feet from the pulley machine, and grasp the cable handle with your palm facing forward and your elbow close to your side.</li>
+    <li>Place the foot opposite your curling hand a little in front of your other foot for better balance.</li>
+    <li>Slowly curl your arm, bringing your palm toward your shoulder.</li>
+    <li>Hold the curl up for a moment and feel the exertion in your bicep.</li>
+    <li>Slowly lower the handle to the starting position.</li>
+    <li>Do 12 to 15 repetitions, then switch arms.</li>
+   </ol>
+    </td>
+  </tr>
+  <tr style="background-color: whitesmoke;">
+    <td colspan="3"> .</td>
+  </tr>
+  <tr>
+    <td><img src="arm3.gif" class="gs-circle gs-image gs-center" alt="Table Setting" width="600" height="750">
+    </td>
+    <td class="gs-xxlarge"><strong>Barbell curl</strong>
+    </td>
+
+    <td><strong> Equipment needed: barbell</strong>
+      <ol>
+    <li>Stand with your feet about shoulder-width apart.</li>
+    <li>Hold the barbell with your arms at your side, palms facing out.</li>
+    <li>While exhaling, slowly curl the barbell up toward your chest. Keep your chest still, using only your arms to lift the barbell.</li>
+    <li>Hold the position for a second, then slowly lower the barbell to its starting position.</li>
+    <li>Repeat 12 to 15 times.</li>
+  </ol>
+    </td>
+  </tr>
+  <tr style="background-color: whitesmoke;">
+    <td colspan="3"> .</td>
+  </tr>
+
+  <tr>
+    <td><img src="arm4.gif" class="gs-circle gs-image gs-center" alt="Table Setting" width="600" height="750">
+    </td>
+    <td class="gs-xxlarge"><strong>Chinup</strong>
+    </td>
+
+    <td>
+      <ol>
+    <li>Stand under the chinup bar, and reach both arms up so that your palms are facing you.</li>
+    <li>Grab the bar with both hands. You may need to jump or step up to reach the bar.</li>
+    <li>With a firm grip and your thumbs wrapped around the bar, steady your body. It may help to cross your legs for more stability.</li>
+    <li>While exhaling slowly, pull your body upward by bending your elbows.</li>
+    <li>Keep your elbows in front of you as you focus on letting your biceps pull you up to where your chin meets the bar.</li>
+    <li>Pause for a moment, then slowly lower yourself to the starting position before repeating the move again.</li>
+  </ol>
+    </td>
+  </tr>
+  <tr style="background-color: whitesmoke;">
+    <td colspan="3"> .</td>
+  </tr>
+  <tr>
+    <td><img src="arm5.gif" class="gs-circle gs-image gs-center" alt="Table Setting" width="600" height="750">
+    </td>
+    <td class="gs-xxlarge"><strong>Triangle pushup</strong>
+    </td>
+
+    <td>
+      <ol>
+    <li>Get into traditional pushup position with only your toes and hands touching the floor.</li>
+    <li>Place your hands below your face with your forefingers and thumbs touching, forming a triangle between your hands.</li>
+    <li>While keeping your torso and legs straight, slowly lower your body so that your nose comes close to your hands.</li>
+    <li>Push your body back up to its starting position, being careful not to arch your back or let it sag.</li>
+    <li>Repeat 12 to 15 times.</li>
+  </ol>
+    </td>
+  </tr>
+  <tr style="background-color: whitesmoke;">
+    <td colspan="3"> .</td>
+  </tr>
+  <tr>
+    <td><img src="arm6.gif" class="gs-circle gs-image gs-center" alt="Table Setting" width="600" height="750">
+    </td>
+    <td class="gs-xxlarge"><strong>Tricep kickback</strong>
+    </td>
+
+    <td><strong> Equipment needed: dumbbell</strong>
+      <ol>
+    <li>Hold a dumbbell in each hand, with your palms facing inward. Bend your knees slightly.</li>
+    <li>Hinge forward at your waist, keeping your back straight and your core engaged, until your upper body is almost parallel to the floor.</li>
+    <li>With your arms close to your side, bend your elbows so that the dumbbells come up alongside the side of your chest.</li>
+    <li>Hold for a second, then bend your elbows until the dumbbells are in the starting position, close to your chest.</li>
+    <li>Repeat 12 to 15 times.</li>
+    <li>If only using one arm at a time, rest for a minute, then switch arms and repeat.</li>
+  </ol>
+    </td>
+  </tr>
+  <tr style="background-color: whitesmoke;">
+    <td colspan="3"> .</td>
+  </tr>
+  <tr>
+    <td><img src="arm7.gif" class="gs-circle gs-image gs-center" alt="Table Setting" width="600" height="750">
+    </td>
+    <td class="gs-xxlarge"><strong>Dips</strong>
+    </td>
+    <td>
+      <ol>
+    <li>Stand in between the rails of a dip bar.</li>
+    <li>Grip each bar with your arms straight down by your side.</li>
+    <li>You may need to bend your knees to keep from touching the floor.</li>
+    <li>Slowly bend your elbows and lower yourself until your upper arms are almost parallel to the floor.</li>
+    <li>Straighten your arms until you’re back at your starting position.</li>
+    <li>Repeat 12 to 15 times.</li>
+   </ol>
+    </td>
+  </tr>
+  <tr style="background-color: whitesmoke;">
+    <td colspan="3"> .</td>
+  </tr>
+  <tr>
+    <td><img src="arm8.gif" class="gs-circle gs-image gs-center" alt="Table Setting" width="600" height="750">
+    </td>
+    <td class="gs-xxlarge"><strong>Overhead extension</strong>
+    </td>
+
+    <td><strong> Equipment needed: dumbbell</strong>
+      <ol>
+    <li>Stand with your feet about shoulder-width apart, with one foot slightly in front of the other for balance. You can also do this exercise while sitting on a bench.</li>
+    <li>Place both hands around the dumbbell handle.</li>
+    <li>Lift the dumbbell up over your head so that your arms are straight.</li>
+    <li>Slowly bend your elbows to a 90-degree angle so that the dumbbell finishes behind your head.</li>
+    <li>Slowly straighten your arms so that the weight is above your head again.</li>
+   </ol>
+    </td>
+  </tr>
+</table>
+
+  </div>
+  <div>
+
+    <hr>
+
+    <!-- End page content -->
+  </div>
+  <!-- Footer -->
+  <footer class="gs-center gs-light-grey gs-padding-32">
+    <h1 class="gs-xxlarge" style="color:gray;">Gym And Supplement</h1>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<title>GymAndSupplement</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="gs.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;background-color:rgb(230, 230, 230);}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+
+
+<div class="gs-top">
+  <div class="gs-bar gs-padding gs-card" style="font-family:JOKER;letter-spacing:4px;background-color:black;color:white;">
+    <a href="index.html" class="gs-bar-item" ><img src="logo.jpg" height="70" width="300" ></a>
+
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="gs-right gs-hide-small">
+      <a href="About.html" class="gs-bar-item gs-button">About</a>
+	  <a href="Blog.html" class="gs-bar-item gs-button">Blog</a>
+	  <a href="Supplement.html" class="gs-bar-item gs-button">Supplement</a>
+	  <a href="Diet.html" class="gs-bar-item gs-button">Diet</a>
+	  <a href="Exercise.html" class="gs-bar-item gs-button">Exercise</a>
+      <a href="Shop.html" class="gs-bar-item gs-button">Shop</a>
+      <a href="contact.php" class="gs-bar-item gs-button">Contact us</a>
+    </div>
+  </div>
+</div>
+<!-- Header -->
+<header class="gs-display-container gs-content gs-wide" style="max-width:1600px;min-width:500px" id="home">
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="img1.jpg" width="1600" height="500">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="img5.jpg" width="1600" height="500">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="img6.jpg" width="1600" height="500">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="img4.jpg" width="1600" height="500">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+
+<!-------------------------------------------------------------------------------------------->
+  
+  
+<!--</header>-->
+
+<!-- Page content -->
+<div class="gs-content gs-center" style="max-width:1100px">
+
+  <!-- diet Section -->
+  <h1 class="xxlarge" >The Ultimate 7-Day Gym Diet Plan</h1>
+  <img src="diet1.jpg" class="gs-round gs-image  gs-center" alt="Table Setting" width="600" height="750">
+  <p class="gs-large">When it comes to nutrition, things can become overly complicated. However, one thing that is abundantly clear is that nutrition has a huge impact on the progress that is made in the gym. This article will highlight a number of considerations that must be made and applied in order to bring about substantial changes. In addition, it will also serve as a resource and highlight the nutrient rich foods that one should incorporate in their daily diet routine.</p>
+  <h1 class="gs-xxlarge">Foods To Add To Your Diet</h1>
+  <p class="gs-large">There are three macronutrients that all play a crucial role in maintaining bodily functions and promoting changes in strength and composition – they are carbs, proteins, and fats. It is essential that we consume all three macros in ample quantities to optimize progress.</p>
+  <h1>1.Carbohydrates</h1>
+  <img src="diet2.jpg" class="gs-round gs-image  gs-center" alt="Table Setting" width="600" height="750">
+  <p class="gs-large">Firstly, carbohydrates are the primary source of energy for the body and therefore play the most substantial role in fueling exercise. There are two different types of carbohydrates – complex and simple. The names give an indication of the time taken to digest; complex carbs take a longer time period to digest than simple carbs. </p>
+  <p class="gs-large">Complex carbohydrates provide the body with prolonged slow-release of energy and have a great nutritional benefit. While simple carbohydrates provide the body with a short-term, fast releasing energy, they contain little nutritional value.</p>
+  <p class="gs-large">For this reason, you should look to primarily consume complex carbohydrates. Some foods to consider adding to your diet include whole-grains, oats, beans, nuts, fruits, and vegetables.</p>
+  <h1>2.Protein</h1>
+  <img src="diet3.jpg" class="gs-round gs-image  gs-center" alt="Table Setting" width="600" height="750">
+  <p class="gs-large">The majority of gym-goers will be well aware that consuming protein is important. The reason why protein is so important is that, it plays a key role in recovery and repair. During exercise, the body is exposed to strains and stresses which cause damage to occur to the muscles at a microscopic level. In order for the damage to be repaired, protein is needed. Without it, recovery periods will be extended and chronic fatigue may become a factor. </p>
+  <p class="gs-large">Protein is found most highly in animal produce such as lean meats, eggs & dairy. It can also be found in smaller quantities in foods such as seeds, nuts, legumes, beans, and soy.</p>
+  <h1>3.Fats</h1>
+ <img src="diet4.jpg" class="gs-round gs-image  gs-center" alt="Table Setting" width="600" height="750">
+  <p class="gs-large">Fats are often incorrectly seen as the primary reason for fat gain. However, fats are not responsible for this and actually play a key role in the absorption and transport of nutrients. In addition, they can have a positive impact on heart health and hormone production. </p>
+  <p class="gs-large">While fats can have a positive impact on health, there are several types of fat – some of which are of greater benefit than others. While saturated fats are not as harmful as once believed, focus primarily on unsaturated fats. Unsaturated fat foods include avocados, seeds, nuts, peanut butter, fish (salmon, tuna, mackerel), oils (olive, peanut, sesame), and soy products (tofu, soy milk). </p>
+  <h1>4.Pre-Workout Foods</h1>
+  <img src="diet5.jpg" class="gs-round gs-image  gs-center" alt="Table Setting" width="600" height="750">
+  <p class="gs-large">The focus with all pre-workout meals or snacks should be carbohydrates to provide the body with plenty of energy to last the full session. If energy levels are sub-optimal, then performance will suffer which will have a consequent impact on our rate of adaptation.</p>
+  <p class="gs-large">To prime the body for performance, focus on primarily consuming complex carbohydrates such as whole-grains, oats, beans, nuts, fruits, and vegetables. Be aware not to consume them just before the workout as they take time to digest. The recommendation is to consume complex carbs one to two hours prior to exercise to allow for full digestion.</p>
+  <p class="gs-large">From that point, focus on simple carbohydrates as they take less time to digest and provide the body with bursts of energy. It may even be recommended to consume some simple carbs during a workout to maintain energy levels and performance.</p>
+  <p class="gs-large">White bread, jam, granola, cereal, rice cakes, sports drinks, and fruit are all viable options for a pre-workout, energy-boosting snack.</p>
+  <p class="gs-large">While the focus should predominantly be on carbohydrates, it is also important to consume some protein prior to stepping into the gym. To support muscle recovery and growth, protein levels should be maintained at a high level throughout each day.</p>
+  <h1>5.Post-Workout Foods</h1>
+  <img src="diet6.jpg" class="gs-round gs-image  gs-center" alt="Table Setting" width="600" height="750">
+  <p class="gs-large">The purpose of post-workout nutrition is two-fold – to promote muscle recovery and replenish energy. Therefore, the focus should once again be on consuming good quality protein and carb foods.
+As reflected on, the stress of training cause micro tears to occur to the muscles that must be repaired. Consuming protein will cause a process known as muscle protein synthesis (MPS) to occur which will begin the repairing process and prevent muscle breakdown. </p>
+  <p class="gs-large">There is a widely held belief that protein timing is extremely important for maximizing growth, however, a number of studies have indicated that total daily protein intake is of greater importance than the timing.
+High-protein foods such as lean beef, chicken, pork, turkey, eggs, dairy, seeds, quinoa, and nuts should be prioritized. Protein supplements, like protein shakes and bars, can serve as a convenient tool for effectively boosting protein intake.</p>
+  <p class="gs-large">Carbohydrates should also form part of post-workout nutrition as the energy that has been expended during exercise must be replaced. </p>
+  <p class="gs-large">If possible, it is recommended to consume protein and carbs together as this will have the most pronounced impact on recovery by enhancing protein and glycogen (energy) synthesis. Often a ratio of 3:1 carb to protein is prescribed for optimizing recovery.</p>
+  <h1>6.Ideal 7-day gym diet<h1>
+  <img src="diet7.jpg" class="gs-round gs-image  gs-center" alt="Table Setting" width="600" height="750">
+  <p class="gs-large">While calories and macronutrients are important, the ideal gym diet will be one that positively influences health. This is a diet that is rich in vitamins and minerals where all three macronutrients are consumed and nutrient-sparse foods are restricted. </p>
+  <p class="gs-large">Below you can find a 7-day gym diet guide:</p>
+  <hr>
+  </div>
+  <div class="gs-content gs-center" style="max-width:1100px">
+  <h2>Day1</h2>
+  <table width="90%" cellpadding="5pixels" cellspacing="5pixels" border="0" style="color:green;">
+  <tr class="gs-button">
+  <td>Breakfast:-</td>
+  <td>Oats Banana Pancakes withProtein Shake</td>
+  </tr>
+  <tr class="gs-button">
+  <td>Lunch:-</td>
+  <td>Multigrain roti with palak chicken Avocado bell pepper salad</td>
+  </tr>
+  <tr class="gs-button">
+  <td>Pre-Workout Snack:-</td>
+  <td>Bananas</td>
+  <tr class="gs-button">
+  <td>Dinner(Post-Workout):-</td>
+  <td>Brown rice, peas paneer curry, sprouts vegetable salad</td>
+  </tr>
+  </table>
+  
+  <hr>
+  
+  <h2>Day2</h2>
+  <table width="90%" cellpadding="5pixels" cellspacing="5pixels" border="0" style="color:green;">
+  <tr class="gs-button">
+  <td>Breakfast:-</td>
+  <td>Oatmeal with Greek Yogurt & Seasonal fruits Mango Juice</td>
+  </tr>
+  <tr class="gs-button">
+  <td>Lunch:-</td>
+  <td>Multigrain roti, fish curry, vegetable salad</td>
+  </tr>
+  <tr class="gs-button">
+  <td>Pre-Workout Snack:-</td>
+  <td>Toast with Jam</td>
+  </tr>
+  <tr class="gs-button">
+  <td>Dinner(Post-Workout):-</td>
+  <td>Broken wheat khichidi, carrot raita, egg white, and vegetable salad</td>
+  </tr>
+  </table>
+  
+  <hr>
+  
+  <h2>Day3</h2>
+  <table width="95%" cellpadding="5pixels" cellspacing="5pixels" border="0" style="color:green;">
+  <tr class="gs-button">
+  <td>Breakfast:-</td>
+  <td>Poached, Eggs Whole, Grain Toast, Protein Shake</td>
+  </tr>
+  <tr class="gs-button">
+  <td>Lunch:-</td>
+  <td>Quinoa upma, chicken and broccoli salad</td>
+  </tr>
+  <tr class="gs-button">
+  <td>Pre-Workout Snack:-</td>
+  <td>Mixed Nuts & Dried Fruitsm</td>
+  </tr>
+  <tr class="gs-button">
+  <td>Dinner(Post-Workout):-</td>
+  <td>Lean Beef and vegetable curry, brown rice, cucumber raita, Baby Potatoes, Chocolate Milk</td>
+  </tr>
+  </table>
+  
+  <hr>
+  
+  <h2>Day4</h2>
+  <table  width="95%" cellpadding="5pixels" cellspacing="5pixels" border="0" style="color:green;">
+  <tr class="gs-button">
+  <td>Breakfast:-</td>
+  <td>Oatmeal with Honey, Apple Juice</td>
+  </tr>
+  <tr class="gs-button">
+  <td>Lunch:-</td>
+  <td>Grilled Chicken, Salad, Whole Grain Bread</td>
+  </tr>
+  <tr class="gs-button">
+  <td>Pre-Workout Snack:-</td>
+  <td>Toast with Peanut Butter</td>
+  </tr>
+  <tr class="gs-button">
+  <td>Dinner(Post-Workout):-</td>
+  <td>Methi Chicken, Brown Rice, Broccoli, Protein Shake</td>
+  </tr>
+  </table>
+  
+  <hr>
+  
+  <h2>Day5</h2>
+  <table  width="95%" cellpadding="5pixels" cellspacing="5pixels" border="0" style="color:green;">
+  <tr class="gs-button">
+  <td>Breakfast:-</td>
+  <td>Scrambled Egg, Whole Grain Toast, Smoothie</td>
+  </tr>
+  <tr class="gs-button">
+  <td>Lunch:-</td>
+  <td>Grilled chicken vegetable roti rolls, Green Salad</td>
+  </tr>
+  <tr class="gs-button">
+  <td>Pre-Workout Snack:-</td>
+  <td>Mixed Nuts & Dried Fruits</td>
+  </tr>
+  <tr class="gs-button">
+  <td>Dinner(Post-Workout):-</td>
+  <td>Chicken Stir Fry, Spring Onion, Peppers & Broccoli, Chocolate Milk</td>
+  </tr>
+  </table>
+  
+  <hr>
+  
+  <h2>Day6</h2>
+  <table  width="95%" cellpadding="5pixels" cellspacing="5pixels" border="0" style="color:green;">
+  <tr class="gs-button">
+  <td>Breakfast:-</td>
+  <td>Oatmeal, Whole Grain Toast, Orange Juice</td>
+  </tr>
+  <tr class="gs-button">
+  <td>Lunch:-</td>
+  <td>Whole Grain Chicken Wrap, Black Beans, Peppers & Greek Yogurt</td>
+  </tr>
+  <tr class="gs-button">
+  <td>Pre-Workout Snack:-</td>
+  <td>Apple with peanut butter</td>
+  </tr>
+  <tr class="gs-button">
+  <td>Dinner(Post-Workout):-</td>
+  <td>Keema bhurji and multigrain rotiLean Beef Mince, Sweet Potato, Protein Shake</td>
+  </tr>
+  </table>
+  
+  <hr>
+  
+  <h2>Day7</h2>
+  <table  width="95%" cellpadding="5pixels" cellspacing="5pixels" border="0" style="color:green">
+  <tr class="gs-button">
+  <td>Breakfast:-</td>
+  <td>	Oatmeal with Nuts Smoothie</td>
+  </tr>
+  <tr class="gs-button">
+  <td>Lunch:-</td>
+  <td>Whole wheat pasta with chicken and Green Salad</td>
+  </tr>
+  <tr class="gs-button">
+  <td>Pre-Workout Snack:-</td>
+  <td>Granola or Cereal</td>
+  </tr>
+  <tr class="gs-button">
+  <td>Dinner(Post-Workout):-</td>
+  <td>Fish curry, boiled green peas salad, Brown Rice, Garden Peas, Milk</td>
+  </tr>
+  </table>
+  
+  <hr>
+    
+  <p class="gs-large">While the above guide will prove to be useful, be aware that when it comes to nutrition, everyone is different. Not only will physical attributes determine your nutritional requirements, the goals that you have set will also influence your diet.</p>
+  <p class="gs-large">For example, two goals that are extremely common are fat loss and muscle growth. To lose fat, calories must be restricted which will cause stored body fat to be broken down. For muscle growth, calorie intake must be increased to build significant muscle size as additional calories are required to accelerate the recovery process.</p>
+  <p class="gs-large">Macro-nutrient demands for both fat loss and muscle growth are similar. Firstly, protein intake should remain high for both. For muscle growth, protein is evidently required for building mass. The role of protein in fat loss is to prevent muscle tissue breakdown as far as possible.</p>
+  <p class="gs-large">As highlighted, carbohydrates are extremely important in energy and replenishment. As a result, those looking to lose weight and build muscle should get the majority of their calories from carb sources. While consuming healthy fats is important, reducing the total amount of fat consumed helps to most effectively restrict calories. This is because, at nine calories per gram, fats contain the greatest number of calories per gram – protein and carbohydrates both contain four calories per gram.</p>
+  <p class="gs-large"></p>
+  <p class="gs-large"></p>
+	
+	
+	</div>
+  </div>
+
+  <hr>
+  
+<!-- End page content -->
+</div>
+<!-- Footer -->
+<footer class="gs-center gs-light-grey gs-padding-32">
+<h1 class="gs-xxlarge" style="color:gray;">Gym And Supplement</h1>  
+</footer>
+
+</body>
+</html>

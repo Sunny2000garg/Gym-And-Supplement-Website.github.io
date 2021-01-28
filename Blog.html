@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<title>GymAndSupplement</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="gs.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;background-color:rgb(230, 230, 230);}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+
+
+<div class="gs-top">
+  <div class="gs-bar gs-padding gs-card" style="font-family:JOKER;letter-spacing:4px;background-color:black;color:white;">
+    <a href="index.html" class="gs-bar-item" ><img src="logo.jpg" height="70" width="300" ></a>
+
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="gs-right gs-hide-small">
+      <a href="About.html" class="gs-bar-item gs-button">About</a>
+	  <a href="Blog.html" class="gs-bar-item gs-button">Blog</a>
+	  <a href="Supplement.html" class="gs-bar-item gs-button">Supplement</a>
+	  <a href="Diet.html" class="gs-bar-item gs-button">Diet</a>
+	  <a href="Exercise.html" class="gs-bar-item gs-button">Exercise</a>
+      <a href="Shop.html" class="gs-bar-item gs-button">Shop</a>
+      <a href="contact.php" class="gs-bar-item gs-button">Contact us</a>
+    </div>
+  </div>
+</div>
+<!-- Header -->
+<header class="gs-display-container gs-content gs-wide" style="max-width:1600px;min-width:500px" id="home">
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="img1.jpg" width="1600" height="500">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="img5.jpg" width="1600" height="500">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="img6.jpg" width="1600" height="500">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="img4.jpg" width="1600" height="500">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+
+<!-------------------------------------------------------------------------------------------->
+  
+  
+<!--</header>-->
+
+<!-- Page content -->
+<div class="gs-content gs-center" style="max-width:1100px">
+
+  <!-- Blog Section -->
+  
+  <h1 class="xxlarge" ><b>Blog</b></h1><br>
+      <img src="blog1.jpg" class="gs-round gs-image  gs-center" alt="Table Setting" width="600" height="750">
+      <h2 class="gs-center"><b>5 Walking Resolutions to Make Now</b></h2>
+	  <h2 class="gs-center"><b>1. WALK AT LEAST 30 MINUTES PER DAY</b></h2>
+      <p class="gs-large">Instead of setting lofty and often unreasonable goals, start small. Work on increasing your walking duration to at least 30 minutes per day, which can lower your risk for disease, improve your mood and help you lose weight. After a few weeks, you can increase two or three of your weekly walks to up your step count even more and increase your calorie burn as your cardio improves. But, no matter how far you walk, the point is to get into a routine of daily exercise.</p>
+      <h2 class="gs-center"><b>2 SET A SMART WEIGHT-LOSS GOAL</b></h2>
+      <p class="gs-large">Walking is one of the best (and easiest) types of exercise you can do to help you lose weight. However, to keep your motivation up, it’s important to set a realistic weight-loss goal. Ideally, you should have smaller goals that can be measured and are time-bound, which leads to an overall bigger goal. Here are some tips to keep you on track:
+    Focus on nutrition: Eating in a calorie deficit is important for weight-loss, but you also need to properly fuel your body for exercise. Start by keeping track of your daily caloric intake with an app like MyFitnessPal to notice trends and see where improvements can be made.
+    Learn the correct technique: While walking can seem simple enough, you’ll need to use good walking technique to go further and faster. This ultimately helps you burn more calories.
+    Move your body daily: Try to find various forms of exercise you enjoy and make it a goal to move your body every day. It doesn’t always have to be intense, either — yoga and swimming are great low-impact complements to a walking routine. On days when you can’t get outdoors, a quick bodyweight circuit helps you build strength and work toward your goals.</p>
+      <h2 class="gs-center"><b>3. MAKE A WEEKLY WALKING PLAN</b></h2>
+	  <p class="gs-large">To progress your level of fitness, you’ll need to have a plan. Instead of just heading out for a walk without a goal in mind, making a weekly walking plan can help you to get the most out of each of your workouts. Including long walks, shorter interval sessions, and even a few strength training or yoga sessions can ensure you’re including variety, working on your weaknesses, and keeping things fun. This also provides a way to track your weekly mileage so you can compare each week to the next and continue to build fitness while minimizing the risk for injury.</p>
+	  <h2 class="gs-center"><b>4. SET UP A SPACE TO WORK OUT AT HOME</b></h2>
+    <p class="gs-large">Chances are, things are going to come up from time to time that keep you from heading outdoors for a walk. Whether it’s the cold this winter or a busy schedule with the kids, setting up a workout space indoors is a great goal that can help you avoid skipping workouts. This can be as simple as a yoga mat and a few hand weights or as complex as a dedicated space in the garage with a treadmill and walking workout videos.</p>
+	 <h2 class="gs-center"><b>5. FIND A WALKING BUDDY</b></h2>
+	<p class="gs-large">A dedicated training partner can be motivating and keep you on track on the days when you don’t feel like exercising. Plus, it’s a great way to be social (and yes, you can even walk with a friend virtually). Consider joining a walking club, plogging group or enlisting your spouse, best friend or other family members. Bonus: Your dog counts, too.</p>
+	</div>
+  </div>
+
+  <hr>
+  
+<!-- End page content -->
+</div>
+<!-- Footer -->
+<footer class="gs-center gs-light-grey gs-padding-32">
+<h1 class="gs-xxlarge" style="color:gray;">Gym And Supplement</h1>  
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<title>GymAndSupplement</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="gs.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;background-color:rgb(230, 230, 230);}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+
+
+
+<div class="gs-top">
+  <div class="gs-bar gs-padding gs-card" style="font-family:JOKER;letter-spacing:4px;background-color:black;color:white;">
+    <a href="index.html" class="gs-bar-item" ><img src="logo.jpg" height="70" width="300" ></a>
+
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="gs-right gs-hide-small">
+      <a href="About.html" class="gs-bar-item gs-button">About</a>
+	  <a href="Blog.html" class="gs-bar-item gs-button">Blog</a>
+	  <a href="Supplement.html" class="gs-bar-item gs-button">Supplement</a>
+	  <a href="Diet.html" class="gs-bar-item gs-button">Diet</a>
+	  <a href="Exercise.html" class="gs-bar-item gs-button">Exercise</a>
+      <a href="Shop.html" class="gs-bar-item gs-button">Shop</a>
+      <a href="contact.php" class="gs-bar-item gs-button">Contact us</a>
+    </div>
+  </div>
+</div>
+<!-- Header -->
+<header class="gs-display-container gs-content gs-wide" style="max-width:1600px;min-width:500px" id="home">
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="img1.jpg" width="1600" height="500">
+  <div class="text" >Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="img5.jpg" width="1600" height="500">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="img6.jpg" width="1600" height="500">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="img4.jpg" width="1600" height="500">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+
+<!-------------------------------------------------------------------------------------------->
+    
+<!--</header>-->
+
+<!-- Page content -->
+<div class="gs-content" style="max-width:1100px; background-color: black;background-image: linear-gradient(180deg,black, gray);color: whitesmoke;">
+
+  <!--  Section -->
+  <div class="gs-row gs-padding-64" id="about">
+    <div class="gs-col m6 gs-padding-large gs-hide-small">
+      <img src="img3.gif" class="gs-round gs-image gs-center" alt="Table Setting" width="600" height="750"><br>
+      <img src="img2.jpg" class="gs-round gs-image gs-center" alt="Table Setting" width="600" height="750">
+     
+	
+	
+	
+	</div>
+
+    <div class="gs-col m6 gs-padding-large">
+      <h1 class="gs-center">A healthier state of mind </h1><br>
+      <p class="gs-large">A number of studies have found that exercise helps depression. There are many views as to how exercise helps people with depression:</p>
+      <ul class="gs-large">
+        <li>Exercise may block negative thoughts or distract you from daily worries.</li>
+        <li>Exercising with others provides an opportunity for increased social contact. </li>
+        <li>Increased fitness may lift your mood and improve your sleep patterns. </li>
+        <li>Exercise may also change levels of chemicals in your brain, such as serotonin, endorphins and stress hormones</li>
+        <li>Doing any physical activity is better than doing none. If you currently do no physical activity, start by doing some, and gradually build up to the recommended amount.</li>
+      </ul> 
+    </div>
+  </div>
+  
+
+  <h3 class="gs-center"><strong>Fitness supplements are usually directly absorbed into the body system to produce energy and help to build the cells at the same time. Every person requires the relevant energy to perform all the set workout programs or the gym session. Also, the protein will help the cells to overcome strain and fatigue during endurance workouts. Runners can now run for long with healthy cells and benefit more at the end of the day.</strong></h3>
+  <!--  Section -->
+  <div class="gs-row gs-padding-64" id="Feature">
+    <div class="gs-col l6 gs-padding-large">
+            <p >It is essential for gym enthusiasts and athletes to increase the intake of protein in their daily diet to aid the rigorous physical activities. Increased consumption of proteins helps in letting the body repair from the wear of tear of muscles. More protein means more time for the body to recover and grow faster. Wondering how it works? During the digestion procedure, the protein is broken down by dietary enzymes. The faster they break, the faster they are converted into amino acids, which is essential for muscle repair. Amino acids are also proven to be necessary for the health of athletes to stay fit, healthy and energized for the daily practice schedule.</p><br>
+    </div>
+    
+    <div class="gs-col l6 gs-padding-large">
+      <img src="home3.jpg" class="gs-round gs-image gs-center" alt="Feature" style="width:100%">
+    </div>
+  </div>
+
+<!-- End page content -->
+
+</div>
+<!-- Footer -->
+<footer class="gs-center gs-light-grey gs-padding-32">
+<h1 class="gs-xxlarge" style="color:gray;">Gym And Supplement</h1>  
+</footer>
+
+</body>
+</html>
